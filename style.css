@@ -4,9 +4,9 @@
     margin: 0;
     font-family: Quicksand;
 }
-*{
+/* *{
     border: 2px dashed red;
- }
+ } */
 /*
  body{
     border: 4px dashed green;
@@ -62,9 +62,10 @@ body{
 .logo{
     gap: 11px;
 }
-.logo h3{
+.nav-logo {
     font-size: 2rem;
     font-weight: 700;
+    color: black;
 }
 #hamburger{
     width: 30px;
@@ -256,7 +257,7 @@ footer{
     color: white;
     margin-bottom: 32px;
 }
-.logo h3{
+.footer-logo{
     font-size: 42.14px;
     font-weight: 700;
     color: white;
@@ -276,6 +277,7 @@ footer{
 .logo-container{
     flex-direction: column;
     width: 400px;
+    align-items: flex-start;
 }
 /* .logo{
     position: relative;
