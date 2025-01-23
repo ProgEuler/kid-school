@@ -18,10 +18,11 @@
 body{
     background-color: rgb(247, 247, 247);
 }
-/* main{
+main{
     margin: 0 auto;
     max-width: 1440px;
-} */
+    /* position: relative; */
+}
 .flex{
     display: flex;
     justify-content: center;
@@ -202,6 +203,8 @@ marquee{
 
 .wrapper-bg{
     background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    /* width: 100%;
+    height: 100%; */
 }
 .our-stories{
 
