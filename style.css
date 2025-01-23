@@ -59,7 +59,11 @@ body{
     gap: 165px;
     padding: 20px 0;
 }
+li, button{
+    cursor: pointer;
+}
 .logo{
+    padding: 20px;
     gap: 11px;
 }
 .nav-logo {
@@ -76,6 +80,11 @@ body{
     gap: 33px;
     font-size: 20px;
     font-weight: 700;
+}
+marquee{
+    padding: 0;
+    font-size: 18px;
+    color: #333;
 }
 .banner{
     gap: 50px;
@@ -94,6 +103,7 @@ body{
 .banner-content p{
     font-size: 20px;
     font-weight: 400;
+    padding: 0;
 }
 .primary-btn{
     padding: 10px;
@@ -104,6 +114,15 @@ body{
     width: 197px;
     font-size: 20px;
     font-weight: 700;
+}
+.primary-btn:hover{
+    background-color: gray;
+}
+#last-btn:hover{
+    background-color: gray;
+}
+.nav-btn:hover{
+    opacity: 80%;
 }
 .banner img{
     width: 100%;
@@ -120,10 +139,13 @@ body{
 .curriculum h3{
     font-size: 46px;
     font-weight: 700;
+    text-align: center;
 }
 .curriculum-card-container{
     margin-top: 80px;
     gap: 33px;
+    width: 100%;
+
 }
 .curriculum-card-container .card{
     text-align: center;
@@ -172,6 +194,10 @@ body{
     background-color: orange;
     color: white;
     border-radius: 50%;
+    cursor: pointer;
+}
+.arrow-icon:hover{
+    opacity: 70%;
 }
 
 .wrapper-bg{
@@ -201,9 +227,15 @@ body{
 .big-card{
     grid-row: span 2;
 }
+#big-card-title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 11px;
+}
 .stories-card h4{
     font-size: 18px;
     font-weight: 700;
+    padding-top: 0;
 }
 .stories-card button{
     position: relative;
@@ -227,17 +259,22 @@ body{
     font-weight: 700;
     margin: 80px 50%;
     width: 197px;
+    border: none;
 }
 .stories-card p{
     font-size: 15.34px;
     font-weight: 500;
+    line-height: 28.76px;
 }
 .stories-card h4, p{
-    padding: 20px;
+    padding: 0 30px 30px;
 }
 .stories-card img{
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+}
+.small-card-img{
+    width: 100%;
 }
 .stories-card{
     border-radius: 16px;
@@ -283,7 +320,7 @@ footer{
     position: relative;
     left: -;
 } */
-@media screen and (min-width: 767px){
+@media screen and (min-width: 577px){
     .mobile-only{
         display: none;
     }
@@ -293,9 +330,12 @@ footer{
         display: none;
     }
     .nav-bar{
-        border-bottom: 1px solid orange;
-        padding: 12px 20px;
+        padding: 0 20px;
         justify-content: space-between;
+    }
+    hr{
+        border-bottom: 1px solid orange;
+        margin-bottom: 8px;
     }
     .banner{
         flex-direction: column-reverse;
@@ -310,5 +350,29 @@ footer{
     }
     .curriculum-card-container{
         flex-direction: column;
+    }
+    .curriculum-card-container .card{
+        width: 100%;
+    }
+    .stories-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 19.5px;
+        margin-top: 80px;
+    }
+    .footer-content{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 22px;
+    }
+    .footer-content p, .logo{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .curriculum .card{
+        width: 450px;
+    }
+    .container{
+        margin: 0 16px;
     }
 }
